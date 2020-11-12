@@ -1,0 +1,137 @@
+name: Mine
+
+on:
+  push:
+  workflow_dispatch:
+  pull_request:
+  schedule:
+    - cron: '5 3,15 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      # Worldwide
+      - name: Create worldwide temp dir
+        run: mkdir -p ./temp/worldwide
+      - name: Fetch Worldwide
+        run: |-
+          curl "https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=${{ secrets.GUID }}" | jq . > ./temp/worldwide/worldwide.json
+      - name: Worldwide IPs
+        run: |-
+          jq 'map(select(.ips)) | map(.ips) | flatten | unique' ./temp/worldwide/worldwide.json | ./scripts/dejsonizelist.py -t ip > ./temp/worldwide/ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="Exchange"))) | map(.ips) | flatten | unique' ./temp/worldwide/worldwide.json | ./scripts/dejsonizelist.py -t ip > ./temp/worldwide/exchange-ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="SharePoint"))) | map(.ips) | flatten | unique' ./temp/worldwide/worldwide.json | ./scripts/dejsonizelist.py -t ip > ./temp/worldwide/sharepoint-ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.ips) | flatten | unique' ./temp/worldwide/worldwide.json | ./scripts/dejsonizelist.py -t ip > ./temp/worldwide/skype-ips.txt
+      - name: Worldwide URLs
+        run: |-
+          jq 'map(select(.urls)) | map(.urls) | flatten | unique' ./temp/worldwide/worldwide.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/worldwide/urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Exchange"))) | map(.urls) | flatten | unique' ./temp/worldwide/worldwide.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/worldwide/exchange-urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="SharePoint"))) | map(.urls) | flatten | unique' ./temp/worldwide/worldwide.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/worldwide/sharepoint-urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.urls) | flatten | unique' ./temp/worldwide/worldwide.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/worldwide/skype-urls.txt
+      # China
+      - name: Create china temp dir
+        run: mkdir -p ./temp/china
+      - name: Fetch China
+        run: |-
+          curl "https://endpoints.office.com/endpoints/China?ClientRequestId=${{ secrets.GUID }}" | jq . > ./temp/china/china.json
+      - name: China IPs
+        run: |-
+          jq 'map(select(.ips)) | map(.ips) | flatten | unique' ./temp/china/china.json | ./scripts/dejsonizelist.py -t ip > ./temp/china/ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="Exchange"))) | map(.ips) | flatten | unique' ./temp/china/china.json | ./scripts/dejsonizelist.py -t ip > ./temp/china/exchange-ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="SharePoint"))) | map(.ips) | flatten | unique' ./temp/china/china.json | ./scripts/dejsonizelist.py -t ip > ./temp/china/sharepoint-ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.ips) | flatten | unique' ./temp/china/china.json | ./scripts/dejsonizelist.py -t ip > ./temp/china/skype-ips.txt
+      - name: China URLs
+        run: |-
+          jq 'map(select(.urls)) | map(.urls) | flatten | unique' ./temp/china/china.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/china/urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Exchange"))) | map(.urls) | flatten | unique' ./temp/china/china.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/china/exchange-urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="SharePoint"))) | map(.urls) | flatten | unique' ./temp/china/china.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/china/sharepoint-urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.urls) | flatten | unique' ./temp/china/china.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/china/skype-urls.txt
+      # Germany
+      - name: Create Germany temp dir
+        run: mkdir -p ./temp/germany
+      - name: Fetch Germany
+        run: |-
+          curl "https://endpoints.office.com/endpoints/Germany?ClientRequestId=${{ secrets.GUID }}" | jq . > ./temp/germany/germany.json
+      - name: Germany IPs
+        run: |-
+          jq 'map(select(.ips)) | map(.ips) | flatten | unique' ./temp/germany/germany.json | ./scripts/dejsonizelist.py -t ip > ./temp/germany/ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="Exchange"))) | map(.ips) | flatten | unique' ./temp/germany/germany.json | ./scripts/dejsonizelist.py -t ip > ./temp/germany/exchange-ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="SharePoint"))) | map(.ips) | flatten | unique' ./temp/germany/germany.json | ./scripts/dejsonizelist.py -t ip > ./temp/germany/sharepoint-ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.ips) | flatten | unique' ./temp/germany/germany.json | ./scripts/dejsonizelist.py -t ip > ./temp/germany/skype-ips.txt
+      - name: Germany URLs
+        run: |-
+          jq 'map(select(.urls)) | map(.urls) | flatten | unique' ./temp/germany/germany.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/germany/urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Exchange"))) | map(.urls) | flatten | unique' ./temp/germany/germany.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/germany/exchange-urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="SharePoint"))) | map(.urls) | flatten | unique' ./temp/germany/germany.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/germany/sharepoint-urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.urls) | flatten | unique' ./temp/germany/germany.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/germany/skype-urls.txt
+      # USGovDoD
+      - name: Create usgovdod temp dir
+        run: mkdir -p ./temp/usgovdod
+      - name: Fetch USGovDoD
+        run: |-
+          curl "https://endpoints.office.com/endpoints/USGovDoD?ClientRequestId=${{ secrets.GUID }}" | jq . > ./temp/usgovdod/usgovdod.json
+      - name: USGovDoD IPs
+        run: |-
+          jq 'map(select(.ips)) | map(.ips) | flatten | unique' ./temp/usgovdod/usgovdod.json | ./scripts/dejsonizelist.py -t ip > ./temp/usgovdod/ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="Exchange"))) | map(.ips) | flatten | unique' ./temp/usgovdod/usgovdod.json | ./scripts/dejsonizelist.py -t ip > ./temp/usgovdod/exchange-ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="SharePoint"))) | map(.ips) | flatten | unique' ./temp/usgovdod/usgovdod.json | ./scripts/dejsonizelist.py -t ip > ./temp/usgovdod/sharepoint-ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.ips) | flatten | unique' ./temp/usgovdod/usgovdod.json | ./scripts/dejsonizelist.py -t ip > ./temp/usgovdod/skype-ips.txt
+      - name: USGovDoD URLs
+        run: |-
+          jq 'map(select(.urls)) | map(.urls) | flatten | unique' ./temp/usgovdod/usgovdod.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/usgovdod/urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Exchange"))) | map(.urls) | flatten | unique' ./temp/usgovdod/usgovdod.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/usgovdod/exchange-urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="SharePoint"))) | map(.urls) | flatten | unique' ./temp/usgovdod/usgovdod.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/usgovdod/sharepoint-urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.urls) | flatten | unique' ./temp/usgovdod/usgovdod.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/usgovdod/skype-urls.txt
+      # USGovGCCHigh
+      - name: Create USGovGCCHigh temp dir
+        run: mkdir -p ./temp/usgovgcchigh
+      - name: Fetch USGovGCCHigh
+        run: |-
+          curl "https://endpoints.office.com/endpoints/USGovGCCHigh?ClientRequestId=${{ secrets.GUID }}" | jq . > ./temp/usgovgcchigh/usgovgcchigh.json
+      - name: USGovGCCHigh IPs
+        run: |-
+          jq 'map(select(.ips)) | map(.ips) | flatten | unique' ./temp/usgovgcchigh/usgovgcchigh.json | ./scripts/dejsonizelist.py -t ip > ./temp/usgovgcchigh/ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="Exchange"))) | map(.ips) | flatten | unique' ./temp/usgovgcchigh/usgovgcchigh.json | ./scripts/dejsonizelist.py -t ip > ./temp/usgovgcchigh/exchange-ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="SharePoint"))) | map(.ips) | flatten | unique' ./temp/usgovgcchigh/usgovgcchigh.json | ./scripts/dejsonizelist.py -t ip > ./temp/usgovgcchigh/sharepoint-ips.txt
+          jq 'map(select(.ips and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.ips) | flatten | unique' ./temp/usgovgcchigh/usgovgcchigh.json | ./scripts/dejsonizelist.py -t ip > ./temp/usgovgcchigh/skype-ips.txt
+      - name: USGovGCCHigh URLs
+        run: |-
+          jq 'map(select(.urls)) | map(.urls) | flatten | unique' ./temp/usgovgcchigh/usgovgcchigh.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/usgovgcchigh/urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Exchange"))) | map(.urls) | flatten | unique' ./temp/usgovgcchigh/usgovgcchigh.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/usgovgcchigh/exchange-urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="SharePoint"))) | map(.urls) | flatten | unique' ./temp/usgovgcchigh/usgovgcchigh.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/usgovgcchigh/sharepoint-urls.txt
+          jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.urls) | flatten | unique' ./temp/usgovgcchigh/usgovgcchigh.json | ./scripts/dejsonizelist.py -t pan-os-url > ./temp/usgovgcchigh/skype-urls.txt
+      # validation
+      - name: Check changes
+        run: |-
+          ./scripts/checkchanges.py feeds temp || echo "CHECK_CHANGES=$?" >> $GITHUB_ENV
+      - name: Print Check Result
+        run: echo "${{ env.CHECK_CHANGES }}"
+      - name: Copy feeds
+        run: |-
+          [ -d feeds ] && rm -rf feeds
+          mkdir -p feeds
+          cp -R ./temp/* feeds
+      - name: Remove temp dir
+        run: rm -rf ./temp
+      - name: Commit
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git status
+          git add -A
+          git status
+          timestamp=$(date -u)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+      - name: Push
+        if: env.CHECK_CHANGES == 0
+        run: |-
+          git push
+      - name: Create PR
+        if: env.CHECK_CHANGES != 0
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: please-check-changes
