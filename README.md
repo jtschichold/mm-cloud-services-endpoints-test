@@ -13,44 +13,45 @@ The idea is pretty simple:
 
 ## Feeds
 
-
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/exchange-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/exchange-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/sharepoint-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/sharepoint-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/skype-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/skype-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/exchange-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/exchange-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/sharepoint-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/sharepoint-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/skype-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/skype-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/exchange-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/exchange-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/sharepoint-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/sharepoint-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/skype-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/skype-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/exchange-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/exchange-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/sharepoint-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/sharepoint-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/skype-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/skype-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/exchange-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/exchange-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/sharepoint-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/sharepoint-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/skype-ips.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/skype-urls.txt
-https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/urls.txt
+| URL |
+| --- |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/exchange-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/exchange-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/sharepoint-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/sharepoint-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/skype-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/skype-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/worldwide/urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/exchange-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/exchange-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/sharepoint-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/sharepoint-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/skype-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/skype-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/germany/urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/exchange-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/exchange-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/sharepoint-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/sharepoint-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/skype-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/skype-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/china/urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/exchange-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/exchange-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/sharepoint-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/sharepoint-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/skype-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/skype-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovdod/urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/exchange-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/exchange-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/sharepoint-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/sharepoint-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/skype-ips.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/skype-urls.txt |
+| https://raw.githubusercontent.com/jtschichold/office365-minemeld-actions/main/feeds/usgovgcchigh/urls.txt |
