@@ -68,5 +68,4 @@ security.microsoft.us
 statics.teams.microsoft.com
 tasks.office365.us
 teamsapuiwebcontent.blob.core.usgovcloudapi.net
-webshell.suite.office365.us
 www.office365.us

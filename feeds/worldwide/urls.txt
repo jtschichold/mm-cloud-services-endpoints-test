@@ -89,7 +89,6 @@
 *.wns.windows.com
 *.yammer.com
 *.yammerusercontent.com
-a.wunderlist.com
 aadrm.com
 account.activedirectory.windowsazure.com
 account.live.com
@@ -407,7 +406,6 @@ www.office.com
 www.onedrive.com
 www.outlook.com
 www.sway.com
-www.wunderlist.com
 www.youtube.com
 yammer.com
 yammerusercontent.com

@@ -72,5 +72,4 @@ scc.office365.us
 secure.aadcdn.microsoftonline-p.com
 security.microsoft.us
 tasks.office365.us
-webshell.suite.office365.us
 www.office365.us

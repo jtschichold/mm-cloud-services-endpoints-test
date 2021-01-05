@@ -1632,20 +1632,6 @@
     "notes": "Outlook for Android and iOS: Evernote integration"
   },
   {
-    "id": 104,
-    "serviceArea": "Common",
-    "serviceAreaDisplayName": "Microsoft 365 Common and Office Online",
-    "urls": [
-      "a.wunderlist.com",
-      "www.wunderlist.com"
-    ],
-    "tcpPorts": "443",
-    "expressRoute": false,
-    "category": "Default",
-    "required": false,
-    "notes": "Outlook for Android and iOS: WunderList integration"
-  },
-  {
     "id": 105,
     "serviceArea": "Common",
     "serviceAreaDisplayName": "Microsoft 365 Common and Office Online",

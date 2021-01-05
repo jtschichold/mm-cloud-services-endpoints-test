@@ -93,6 +93,5 @@ svc.ms
 tasks.office365.us
 tb.pipe.aria.microsoft.com
 teamsapuiwebcontent.blob.core.usgovcloudapi.net
-webshell.suite.office365.us
 wns.windows.com
 www.office365.us

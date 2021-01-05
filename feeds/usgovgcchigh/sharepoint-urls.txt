@@ -71,6 +71,5 @@ static.sharepointonline.com
 svc.ms
 tasks.office365.us
 tb.pipe.aria.microsoft.com
-webshell.suite.office365.us
 wns.windows.com
 www.office365.us

@@ -250,7 +250,6 @@
     "serviceAreaDisplayName": "Microsoft 365 Common and Office Online",
     "urls": [
       "portal.office365.us",
-      "webshell.suite.office365.us",
       "www.office365.us"
     ],
     "ips": [
