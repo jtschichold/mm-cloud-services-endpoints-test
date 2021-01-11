@@ -106,14 +106,14 @@ jobs:
           jq 'map(select(.urls and (.serviceArea=="Common" or .serviceArea=="Skype"))) | map(.urls) | flatten | unique' ./temp/usgovgcchigh/usgovgcchigh.json > ./temp/usgovgcchigh/skype-urls.txt
       # processing
       - name: Process IP lists
-        uses: jtschichold/mm-process-ip-list@v0
+        uses: jtschichold/mm-process-ip-list@301234354e
         with:
           list: ./temp/**/*-ips.txt
           filterInPlace: true
           filterReservedIPs: true
           filter: ./ip-exclusion-list
       - name: Process URL lists
-        uses: jtschichold/mm-process-url-list@v0
+        uses: jtschichold/mm-process-url-list@be420d4684
         with:
           list: ./temp/**/*-urls.txt
           inPlace: true
@@ -127,7 +127,7 @@ jobs:
           cp -R ./temp/* feeds
       - name: Check changes
         id: check_changes
-        uses: jtschichold/mm-check-changes@v0
+        uses: jtschichold/mm-check-changes@fef08ed6dd
         with:
           includeGlob: feeds/**/*.txt
       - name: Print Check Result
@@ -149,6 +149,6 @@ jobs:
           git push
       - name: Create PR
         if: steps.check_changes.outputs.bigChange == 'true'
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@45c510e
         with:
           branch: please-check-changes
