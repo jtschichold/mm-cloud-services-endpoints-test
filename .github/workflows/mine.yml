@@ -113,7 +113,7 @@ jobs:
           filterReservedIPs: true
           filter: ./ip-exclusion-list
       - name: Process URL lists
-        uses: jtschichold/mm-process-ip-list@v0
+        uses: jtschichold/mm-process-url-list@v0
         with:
           list: ./temp/**/*-urls.txt
           inPlace: true
@@ -131,7 +131,7 @@ jobs:
         with:
           includeGlob: feeds/**/*.txt
       - name: Print Check Result
-        run: echo "${{ steps.check_changes.bigChange }}"
+        run: echo "${{ steps.check_changes.outputs.bigChange }}"
       - name: Remove temp dir
         run: rm -rf ./temp
       - name: Commit
@@ -144,11 +144,11 @@ jobs:
           timestamp=$(date -u)
           git commit -m "Latest data: ${timestamp}" || exit 0
       - name: Push
-        if: steps.check_changes.bigChange != 'true'
+        if: steps.check_changes.outputs.bigChange != 'true'
         run: |-
           git push
       - name: Create PR
-        if: steps.check_changes.bigChange == 'true'
+        if: steps.check_changes.outputs.bigChange == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           branch: please-check-changes
