@@ -131,7 +131,7 @@ jobs:
         with:
           includeGlob: feeds/**/*.txt
       - name: Print Check Result
-        run: echo "${{ check_changes.bigChange }}"
+        run: echo "${{ steps.check_changes.bigChange }}"
       - name: Remove temp dir
         run: rm -rf ./temp
       - name: Commit
@@ -144,11 +144,11 @@ jobs:
           timestamp=$(date -u)
           git commit -m "Latest data: ${timestamp}" || exit 0
       - name: Push
-        if: check_changes.bigChange == 0
+        if: steps.check_changes.bigChange != 'true'
         run: |-
           git push
       - name: Create PR
-        if: check_changes.bigChange != 0
+        if: steps.check_changes.bigChange == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           branch: please-check-changes
