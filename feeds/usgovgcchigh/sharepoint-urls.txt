@@ -1,75 +1,64 @@
-*.cdn.office.net
-*.cdn.office365.us
-*.compliance.microsoft.us
-*.gov.online.office365.us
-*.gov.us.microsoftonline.com
-*.msauth.net
-*.msauthimages.us
-*.msftauth.net
-*.msftauthimages.us
-*.office365.us
-*.osi.office365.us
-*.security.microsoft.us
-*.sharepoint.us
-*.svc.ms
-*.wns.windows.com
-activation.sls.microsoft.com
-activity.windows.com
-admin.onedrive.us
-az741266.vo.msecnd.net
-cdn.odc.officeapps.live.com
-cdn.office.net
-cdn.office365.us
-clientconfig.microsoftonline-p.net
-compliance.microsoft.us
-crl.microsoft.com
-g.live.com
-gcchigh.loki.office365.us
-go.microsoft.com
-gov.online.office365.us
-gov.us.microsoftonline.com
-graph.microsoft.us
-graph.microsoftazure.us
-graph.windows.net
-insertmedia.bing.office.net
-login-us.microsoftonline.com
-login.microsoftonline-p.com
-login.microsoftonline.com
-login.microsoftonline.us
-login.windows.net
-loginex.microsoftonline.com
-lpcres.delve.office.com
-msauth.net
-msauthimages.us
-mscrl.microsoft.com
-msftauth.net
-msftauthimages.us
-nexus.microsoftonline-p.com
-ocsa.officeapps.live.com
-ocsredir.officeapps.live.com
-ocws.officeapps.live.com
-odc.officeapps.live.com
-office15client.microsoft.com
-office365.us
-officecdn.microsoft.com
-officecdn.microsoft.com.edgesuite.net
-officeclient.microsoft.com
-officehome.msocdn.us
-officepreviewredir.microsoft.com
-officeredir.microsoft.com
-ols.officeapps.live.com
-oneclient.sfx.ms
-osi.office365.us
-portal.office365.us
-prod.msocdn.us
-r.office.microsoft.com
-secure.aadcdn.microsoftonline-p.com
-security.microsoft.us
-sharepoint.us
-spoprod-a.akamaihd.net
-static.sharepointonline.com
-svc.ms
-tasks.office365.us
-tb.pipe.aria.microsoft.com
-wns.windows.com
-www.office365.us
+[
+  "*.cdn.office.net",
+  "*.cdn.office365.us",
+  "*.compliance.microsoft.us",
+  "*.gov.online.office365.us",
+  "*.gov.us.microsoftonline.com",
+  "*.msauth.net",
+  "*.msauthimages.us",
+  "*.msftauth.net",
+  "*.msftauthimages.us",
+  "*.office365.us",
+  "*.osi.office365.us",
+  "*.security.microsoft.us",
+  "*.sharepoint.us",
+  "*.svc.ms",
+  "*.wns.windows.com",
+  "activation.sls.microsoft.com",
+  "activity.windows.com",
+  "admin.onedrive.us",
+  "az741266.vo.msecnd.net",
+  "cdn.odc.officeapps.live.com",
+  "clientconfig.microsoftonline-p.net",
+  "compliance.microsoft.us",
+  "crl.microsoft.com",
+  "g.live.com",
+  "gcchigh.loki.office365.us",
+  "go.microsoft.com",
+  "graph.microsoft.us",
+  "graph.microsoftazure.us",
+  "graph.windows.net",
+  "insertmedia.bing.office.net",
+  "login-us.microsoftonline.com",
+  "login.microsoftonline-p.com",
+  "login.microsoftonline.com",
+  "login.microsoftonline.us",
+  "login.windows.net",
+  "loginex.microsoftonline.com",
+  "lpcres.delve.office.com",
+  "mscrl.microsoft.com",
+  "nexus.microsoftonline-p.com",
+  "ocsa.officeapps.live.com",
+  "ocsredir.officeapps.live.com",
+  "ocws.officeapps.live.com",
+  "odc.officeapps.live.com",
+  "office15client.microsoft.com",
+  "officecdn.microsoft.com",
+  "officecdn.microsoft.com.edgesuite.net",
+  "officeclient.microsoft.com",
+  "officehome.msocdn.us",
+  "officepreviewredir.microsoft.com",
+  "officeredir.microsoft.com",
+  "ols.officeapps.live.com",
+  "oneclient.sfx.ms",
+  "portal.office365.us",
+  "prod.msocdn.us",
+  "r.office.microsoft.com",
+  "secure.aadcdn.microsoftonline-p.com",
+  "security.microsoft.us",
+  "spoprod-a.akamaihd.net",
+  "static.sharepointonline.com",
+  "tasks.office365.us",
+  "tb.pipe.aria.microsoft.com",
+  "www.office365.us"
+]
