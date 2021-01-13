@@ -1,4 +1,4 @@
-# Office365 MineMeld Actions
+# Office365 Endpoints
 
 *THIS IS STILL AN EXPERIMENT!! DO NOT USE THIS REPO IN PRODUCTION!!!*
 
