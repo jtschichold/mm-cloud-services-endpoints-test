@@ -65,9 +65,9 @@ jobs:
       # validation
       - name: Check changes
         id: check_changes
-        uses: jtschichold/mm-check-changes@f65901e
+        uses: jtschichold/mm-check-changes@53cbe86
         with:
-          includeGlob: ./**/*.txt
+          includeGlob: '**/*.txt'
       - name: Print Check Result
         run: echo "${{ steps.check_changes.outputs.bigChange }}"
       - name: Commit
