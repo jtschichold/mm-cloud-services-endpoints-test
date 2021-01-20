@@ -7,8 +7,17 @@ See [https://github.com/alex/nyt-2020-election-scraper](https://github.com/alex/
 
 The idea is pretty simple:
 - every 12 hours the Mine Github Action workflow is triggered
-- the workflow grabs the latest versions of the O365 endpoints and translates them in multiple plaintext feeds
-- if there was a small change, the new feeds are automatically pushed into the repo
-- if there was a large change, the workflow creates a PR to ask humans to validate the changes
+- the workflow grabs the latest versions of the Cloud Services endpoints and filters/translates/aggregates the results in multiple plaintext feeds
+- change detection is performed:
+  + if there a small change is detected, the new feeds are automatically pushed into the repo
+  + if there instead a big change is detected, the workflow creates a PR to ask humans to validate the changes before merge
 
-## Feeds
+## GitHub Actions
+
+This repo makes use of the following GitHub Actions:
+- [actions/checkout](https://github.com/actions/checkout)
+- [jtschichold/mm-cloud-services-miners](https://github.com/jtschichold/mm-cloud-services-miners)
+- [jtschichold/mm-process-ip-list](https://github.com/jtschichold/mm-process-ip-list)
+- [jtschichold/mm-process-url-list](https://github.com/jtschichold/mm-process-url-list)
+- [jtschichold/mm-check-changes](https://github.com/jtschichold/mm-check-changes)
+- [peter-evans/create-pull-request](https://github.com/peter-evans/create-pull-request)
