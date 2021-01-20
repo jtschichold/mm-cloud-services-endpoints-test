@@ -63,12 +63,6 @@ jobs:
           outFormat: PANOSURL
           filter: ./url-exclusion-list
       # validation
-      - name: git add
-        run: |-
-          git config user.name "Automated"
-          git config user.email "actions@users.noreply.github.com"
-          git status
-          git add -A
       - name: Check changes
         id: check_changes
         uses: jtschichold/mm-check-changes@fef08ed6dd
@@ -78,6 +72,10 @@ jobs:
         run: echo "${{ steps.check_changes.outputs.bigChange }}"
       - name: Commit
         run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git status
+          git add -A
           git status
           timestamp=$(date -u)
           git commit -m "Latest data: ${timestamp}" || exit 0
