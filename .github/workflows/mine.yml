@@ -51,14 +51,14 @@ jobs:
       - name: Process IP lists
         uses: jtschichold/mm-process-ip-list@301234354e
         with:
-          list: ./**/*-ips.txt
+          list: ./**/*ips.txt
           filterInPlace: true
           filterReservedIPs: true
           filter: ./ip-exclusion-list
       - name: Process URL lists
         uses: jtschichold/mm-process-url-list@be420d4684
         with:
-          list: ./**/*-urls.txt
+          list: ./**/*urls.txt
           inPlace: true
           outFormat: PANOSURL
           filter: ./url-exclusion-list
