@@ -1,0 +1,157 @@
+o365:
+  - name: mine O365 instance Worldwide
+    miner: O365Miner
+    args:
+      instance: Worldwide
+    outputs:
+      - resultPath: ./o365/worldwide/ips.txt
+        filter: "[?endpointType=='IP'].endpoint"
+      - resultPath: ./o365/worldwide/exchange-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'Exchange')].endpoint"
+      - resultPath: ./o365/worldwide/sharepoint-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'SharePoint')].endpoint"
+      - resultPath: ./o365/worldwide/skype-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'Skype')].endpoint"
+      - resultPath: ./o365/worldwide/urls.txt
+        filter: "[?endpointType=='URL'].endpoint"
+      - resultPath: ./o365/worldwide/exchange-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'Exchange')].endpoint"
+      - resultPath: ./o365/worldwide/sharepoint-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'SharePoint')].endpoint"
+      - resultPath: ./o365/worldwide/skype-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'Skype')].endpoint"
+  - name: mine O365 instance USGovDoD
+    miner: O365Miner
+    args:
+      instance: USGovDoD
+    outputs:
+      - resultPath: ./o365/usgovdod/ips.txt
+        filter: "[?endpointType=='IP'].endpoint"
+      - resultPath: ./o365/usgovdod/exchange-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'Exchange')].endpoint"
+      - resultPath: ./o365/usgovdod/sharepoint-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'SharePoint')].endpoint"
+      - resultPath: ./o365/usgovdod/skype-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'Skype')].endpoint"
+      - resultPath: ./o365/usgovdod/urls.txt
+        filter: "[?endpointType=='URL'].endpoint"
+      - resultPath: ./o365/usgovdod/exchange-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'Exchange')].endpoint"
+      - resultPath: ./o365/usgovdod/sharepoint-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'SharePoint')].endpoint"
+      - resultPath: ./o365/usgovdod/skype-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'Skype')].endpoint"
+  - name: mine O365 instance USGovGCCHigh
+    miner: O365Miner
+    args:
+      instance: USGovGCCHigh
+    outputs:
+      - resultPath: ./o365/usgovgcchigh/ips.txt
+        filter: "[?endpointType=='IP'].endpoint"
+      - resultPath: ./o365/usgovgcchigh/exchange-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'Exchange')].endpoint"
+      - resultPath: ./o365/usgovgcchigh/sharepoint-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'SharePoint')].endpoint"
+      - resultPath: ./o365/usgovgcchigh/skype-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'Skype')].endpoint"
+      - resultPath: ./o365/usgovgcchigh/urls.txt
+        filter: "[?endpointType=='URL'].endpoint"
+      - resultPath: ./o365/usgovgcchigh/exchange-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'Exchange')].endpoint"
+      - resultPath: ./o365/usgovgcchigh/sharepoint-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'SharePoint')].endpoint"
+      - resultPath: ./o365/usgovgcchigh/skype-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'Skype')].endpoint"
+  - name: mine O365 instance China
+    miner: O365Miner
+    args:
+      instance: China
+    outputs:
+      - resultPath: ./o365/china/ips.txt
+        filter: "[?endpointType=='IP'].endpoint"
+      - resultPath: ./o365/china/exchange-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'Exchange')].endpoint"
+      - resultPath: ./o365/china/sharepoint-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'SharePoint')].endpoint"
+      - resultPath: ./o365/china/skype-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'Skype')].endpoint"
+      - resultPath: ./o365/china/urls.txt
+        filter: "[?endpointType=='URL'].endpoint"
+      - resultPath: ./o365/china/exchange-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'Exchange')].endpoint"
+      - resultPath: ./o365/china/sharepoint-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'SharePoint')].endpoint"
+      - resultPath: ./o365/china/skype-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'Skype')].endpoint"
+  - name: mine O365 instance Germany
+    miner: O365Miner
+    args:
+      instance: Germany
+    outputs:
+      - resultPath: ./o365/germany/ips.txt
+        filter: "[?endpointType=='IP'].endpoint"
+      - resultPath: ./o365/germany/exchange-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'Exchange')].endpoint"
+      - resultPath: ./o365/germany/sharepoint-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'SharePoint')].endpoint"
+      - resultPath: ./o365/germany/skype-ips.txt
+        filter: "[?endpointType=='IP' && (serviceArea == 'Common' || serviceArea == 'Skype')].endpoint"
+      - resultPath: ./o365/germany/urls.txt
+        filter: "[?endpointType=='URL'].endpoint"
+      - resultPath: ./o365/germany/exchange-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'Exchange')].endpoint"
+      - resultPath: ./o365/germany/sharepoint-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'SharePoint')].endpoint"
+      - resultPath: ./o365/germany/skype-urls.txt
+        filter: "[?endpointType=='URL' && (serviceArea == 'Common' || serviceArea == 'Skype')].endpoint"
+azure:
+  - name: mine Azure Public Cloud
+    miner: AzureWithServiceTagsMiner
+    args:
+      cloud: PublicCloud
+    outputs:
+      - resultPath: ./azure/public-cloud-ips.txt
+  - name: mine Azure China Cloud
+    miner: AzureWithServiceTagsMiner
+    args:
+      cloud: ChinaCloud
+    outputs:
+      - resultPath: ./azure/china-cloud-ips.txt
+  - name: mine Azure US Government Cloud
+    miner: AzureWithServiceTagsMiner
+    args:
+      cloud: USGovernmentCloud
+    outputs:
+      - resultPath: ./azure/usgovernment-cloud-ips.txt
+  - name: mine Azure Germany  Cloud
+    miner: AzureWithServiceTagsMiner
+    args:
+      cloud: GermanyCloud
+    outputs:
+      - resultPath: ./azure/germany-cloud-ips.txt
+aws:
+  - name: mine AWS IP Ranges
+    miner: AWSIPRangesMiner
+    outputs:
+      - resultPath: ./aws/all-regions-ips.txt
+adobe:
+  - name: mine Adobe Creative Cloud Network Endpoints
+    miner: AdobeCreativeMiner
+    outputs:
+      - resultPath: ./adobe/endpoints-urls.txt
+google:
+  - name: mine Google Cloud IP Ranges
+    miner: GoogleCloudNetblocksMiner
+    outputs:
+      - resultPath: ./google/google-cloud-ips.txt
+  - name: mine Google Services IP Ranges
+    miner: GoogleNetblocksMiner
+    outputs:
+      - resultPath: ./google/google-services-ips.txt
+facebook:
+  - name: mine Facebook AS Registered Routes
+    miner: RADBASRegisterdRoutesMiner
+    args:
+      autonomous_system: AS32934
+    outputs:
+      - resultPath: ./facebook/facebook-registered-ips.txt
