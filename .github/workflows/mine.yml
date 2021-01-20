@@ -20,6 +20,8 @@ jobs:
         with:
           config: ./cs-mining-config.yml
           configSection: o365
+        env:
+          O365MINER_CLIENT_GUID: ${{ secrets.GUID }}
       - name: mine Azure
         uses: jtschichold/mm-cloud-services-miners@50e3bb4
         with:
