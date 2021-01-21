@@ -62,6 +62,19 @@ jobs:
           inPlace: true
           outFormat: PANOSURL
           filter: ./url-exclusion-list
+      # processing Facebook prefixes
+      - name: Compute Facebook Not Announced Prefixes
+        uses: jtschichold/mm-process-ip-list@301234354e
+        with:
+          list: ./facebook/facebook-registered-ips.txt
+          filter: ./facebook/facebook-announced-ips.txt
+          result: ./facebook/facebook-registered-but-not-announced-ips.txt
+      - name: Compute Facebook Not Registered Prefixes
+        uses: jtschichold/mm-process-ip-list@301234354e
+        with:
+          list: ./facebook/facebook-announced-ips.txt
+          filter: ./facebook/facebook-registered-ips.txt
+          result: ./facebook/facebook-announced-but-not-registered-ips.txt
       # validation
       - name: Check changes
         id: check_changes

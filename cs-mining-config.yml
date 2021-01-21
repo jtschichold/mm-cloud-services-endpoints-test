@@ -155,3 +155,9 @@ facebook:
       autonomous_system: AS32934
     outputs:
       - resultPath: ./facebook/facebook-registered-ips.txt
+  - name: mine Facebook AS Announced Prefixes
+    miner: BGPViewASNPrefixMiner
+    args:
+      autonomous_system: AS32934
+    outputs:
+      - resultPath: ./facebook/facebook-announced-ips.txt
