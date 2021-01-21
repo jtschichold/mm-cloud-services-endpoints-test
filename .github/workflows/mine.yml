@@ -23,27 +23,27 @@ jobs:
         env:
           O365MINER_CLIENT_GUID: ${{ secrets.GUID }}
       - name: mine Azure
-        uses: jtschichold/mm-cloud-services-miners@50e3bb4
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d
         with:
           config: ./cs-mining-config.yml
           configSection: azure
       - name: mine AWS
-        uses: jtschichold/mm-cloud-services-miners@50e3bb4
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d
         with:
           config: ./cs-mining-config.yml
           configSection: aws
       - name: mine Adobe
-        uses: jtschichold/mm-cloud-services-miners@50e3bb4
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d
         with:
           config: ./cs-mining-config.yml
           configSection: adobe
       - name: mine Google
-        uses: jtschichold/mm-cloud-services-miners@50e3bb4
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d
         with:
           config: ./cs-mining-config.yml
           configSection: google
       - name: mine Facebook
-        uses: jtschichold/mm-cloud-services-miners@50e3bb4
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d
         with:
           config: ./cs-mining-config.yml
           configSection: facebook
