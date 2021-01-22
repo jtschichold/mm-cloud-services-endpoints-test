@@ -16,47 +16,47 @@ jobs:
         uses: actions/checkout@v2
       # mine
       - name: mine O365
-        uses: jtschichold/mm-cloud-services-miners@50e3bb4
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d1f2ec1c9eff8eda528742bf1ed6a04049
         with:
           config: ./cs-mining-config.yml
           configSection: o365
         env:
           O365MINER_CLIENT_GUID: ${{ secrets.GUID }}
       - name: mine Azure
-        uses: jtschichold/mm-cloud-services-miners@24e6b2d
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d1f2ec1c9eff8eda528742bf1ed6a04049
         with:
           config: ./cs-mining-config.yml
           configSection: azure
       - name: mine AWS
-        uses: jtschichold/mm-cloud-services-miners@24e6b2d
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d1f2ec1c9eff8eda528742bf1ed6a04049
         with:
           config: ./cs-mining-config.yml
           configSection: aws
       - name: mine Adobe
-        uses: jtschichold/mm-cloud-services-miners@24e6b2d
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d1f2ec1c9eff8eda528742bf1ed6a04049
         with:
           config: ./cs-mining-config.yml
           configSection: adobe
       - name: mine Google
-        uses: jtschichold/mm-cloud-services-miners@24e6b2d
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d1f2ec1c9eff8eda528742bf1ed6a04049
         with:
           config: ./cs-mining-config.yml
           configSection: google
       - name: mine Facebook
-        uses: jtschichold/mm-cloud-services-miners@24e6b2d
+        uses: jtschichold/mm-cloud-services-miners@24e6b2d1f2ec1c9eff8eda528742bf1ed6a04049
         with:
           config: ./cs-mining-config.yml
           configSection: facebook
       # processing
       - name: Process IP lists
-        uses: jtschichold/mm-process-ip-list@301234354e
+        uses: jtschichold/mm-process-ip-list@a4725a3d55a6951e88e59dd0f04a823220e20910
         with:
           list: ./**/*ips.txt
           filterInPlace: true
           filterReservedIPs: true
           filter: ./ip-exclusion-list
       - name: Process URL lists
-        uses: jtschichold/mm-process-url-list@be420d4684
+        uses: jtschichold/mm-process-url-list@8fc0be7534ec4a2cfa650fa271dbc3cf11524904
         with:
           list: ./**/*urls.txt
           inPlace: true
@@ -64,13 +64,13 @@ jobs:
           filter: ./url-exclusion-list
       # processing Facebook prefixes
       - name: Compute Facebook Not Announced Prefixes
-        uses: jtschichold/mm-process-ip-list@301234354e
+        uses: jtschichold/mm-process-ip-list@a4725a3d55a6951e88e59dd0f04a823220e20910
         with:
           list: ./facebook/facebook-registered-ips.txt
           filter: ./facebook/facebook-announced-ips.txt
           result: ./facebook/facebook-registered-but-not-announced-ips.txt
       - name: Compute Facebook Not Registered Prefixes
-        uses: jtschichold/mm-process-ip-list@301234354e
+        uses: jtschichold/mm-process-ip-list@a4725a3d55a6951e88e59dd0f04a823220e20910
         with:
           list: ./facebook/facebook-announced-ips.txt
           filter: ./facebook/facebook-registered-ips.txt
@@ -78,7 +78,7 @@ jobs:
       # validation
       - name: Check changes
         id: check_changes
-        uses: jtschichold/mm-check-changes@53cbe86
+        uses: jtschichold/mm-check-changes@53cbe86e0b7b8dffe63209c02d7138045b254303
         with:
           includeGlob: '**/*.txt'
       - name: Print Check Result
@@ -98,6 +98,6 @@ jobs:
           git push
       - name: Create PR
         if: steps.check_changes.outputs.bigChange == 'true'
-        uses: peter-evans/create-pull-request@45c510e
+        uses: peter-evans/create-pull-request@45c510e1f68ba052e3cd911f661a799cfb9ba3a3
         with:
           branch: please-check-changes
