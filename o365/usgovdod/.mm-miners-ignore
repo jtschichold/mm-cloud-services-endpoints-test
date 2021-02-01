@@ -17,8 +17,8 @@
 .*\.hockeyapp.net
 .*\.uservoice.com
 .*\.yahooapis.com
-.*\.www.evernote.com
-.*\.www.google-analytics.com
-.*\.www.googleapis.com
-.*\.www.youtube.com
-.*\.www.acompli.com
+.*\.evernote.com
+.*\.google-analytics.com
+.*\.googleapis.com
+.*\.youtube.com
+.*\.acompli.com
