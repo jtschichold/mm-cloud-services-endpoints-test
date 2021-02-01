@@ -127,7 +127,6 @@ cert.int-x3.letsencrypt.org/
 clientconfig.microsoftonline-p.net/
 companymanager.microsoftonline.com/
 compass-ssl.microsoft.com/
-connect.facebook.net/
 contentstorage.osi.office.net/
 crl.globalsign.com/
 crl.globalsign.net/

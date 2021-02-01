@@ -106,7 +106,6 @@ cdnprod.myanalytics.microsoft.com/
 cert.int-x3.letsencrypt.org/
 clientconfig.microsoftonline-p.net/
 companymanager.microsoftonline.com/
-connect.facebook.net/
 contentstorage.osi.office.net/
 crl.globalsign.com/
 crl.globalsign.net/
