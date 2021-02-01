@@ -275,15 +275,10 @@ workplaceanalytics.office.com/
 wus-firstpartyapps.oaspapps.com/
 wus-www.sway-cdn.com/
 wus-www.sway-extensions.com/
-www.acompli.com/
 www.digicert.com/
 www.dropbox.com/
-www.evernote.com/
-www.google-analytics.com/
-www.googleapis.com/
 www.microsoft.com/
 www.office.com/
 www.onedrive.com/
 www.outlook.com/
 www.sway.com/
-www.youtube.com/
