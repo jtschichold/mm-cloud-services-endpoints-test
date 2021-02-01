@@ -4,6 +4,7 @@
 .*\.localytics\.com
 .*\.google\.com
 .*\.yahoo\.com
+.*\.dropbox.com
 .*\.dropboxapi.com
 .*\.meetup.com
 .*\.box.com
