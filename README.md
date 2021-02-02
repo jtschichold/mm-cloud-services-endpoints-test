@@ -2,6 +2,8 @@
 
 *THIS IS STILL AN EXPERIMENT!! DO NOT USE THIS REPO IN PRODUCTION!!!*
 
+You can read more about this repo here: https://medium.com/palo-alto-networks-developer-blog/continuous-scraping-of-cloud-services-endpoints-978920fd27ca
+
 This repo is using Github Actions to automatically mine Cloud Services IP Ranges/Endpoints and translate the results in a format consumable by network security devices.
 See [https://github.com/alex/nyt-2020-election-scraper](https://github.com/alex/nyt-2020-election-scraper) for more details about this technique.
 
