@@ -13,8 +13,6 @@
 *.security.apps.mil/
 activation.sls.microsoft.com/
 activity.windows.com/
-adminwebservice.gov.us.microsoftonline.com/
-becws.gov.us.microsoftonline.com/
 cdn.odc.officeapps.live.com/
 clientconfig.microsoftonline-p.net/
 compliance.apps.mil/
@@ -51,7 +49,6 @@ officepreviewredir.microsoft.com/
 officeredir.microsoft.com/
 ols.officeapps.live.com/
 portal.apps.mil/
-provisioningapi.gov.us.microsoftonline.com/
 r.office.microsoft.com/
 reports.apps.mil/
 secure.aadcdn.microsoftonline-p.com/

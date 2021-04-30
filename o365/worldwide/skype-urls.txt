@@ -13,6 +13,7 @@
 *.cloudapp.net/
 *.compliance.microsoft.com/
 *.config.office.net/
+*.cortana.ai/
 *.entrust.net/
 *.events.data.microsoft.com/
 *.flow.microsoft.com/
@@ -66,7 +67,6 @@
 *.symcb.com/
 *.symcd.com/
 *.teams.microsoft.com/
-*.urlp.sfbassets.com/
 *.users.storage.live.com/
 *.verisign.com/
 *.verisign.net/
@@ -105,7 +105,9 @@ c.live.com/
 c1.microsoft.com/
 cacerts.digicert.com/
 cdn.forms.office.net/
+cdn.odc.officeapps.live.com/
 cdn.optimizely.com/
+cdn.uci.officeapps.live.com/
 cdnprod.myanalytics.microsoft.com/
 cert.int-x3.letsencrypt.org/
 clientconfig.microsoftonline-p.net/
@@ -133,7 +135,6 @@ enterpriseregistration.windows.net/
 eus-www.sway-cdn.com/
 eus-www.sway-extensions.com/
 excelbingmap.firstpartyapps.oaspapps.com/
-excelcs.officeapps.live.com/
 firstpartyapps.oaspapps.com/
 forms.microsoft.com/
 go.microsoft.com/
@@ -171,8 +172,6 @@ ocsp.int-x3.letsencrypt.org/
 ocsp.msocsp.com/
 ocsp2.globalsign.com/
 ocspx.digicert.com/
-ocws.officeapps.live.com/
-odc.officeapps.live.com/
 office.live.com/
 office.microsoft.com/
 office15client.microsoft.com/
@@ -184,17 +183,12 @@ officeclient.microsoft.com/
 officepreviewredir.microsoft.com/
 officeredir.microsoft.com/
 omextemplates.content.office.net/
-osiprod-cus-daffodil-signalr-00.service.signalr.net/
-osiprod-neu-daffodil-signalr-00.service.signalr.net/
-osiprod-weu-daffodil-signalr-00.service.signalr.net/
-osiprod-wus-daffodil-signalr-00.service.signalr.net/
 partnerservices.getmicrosoftkey.com/
 passwordreset.microsoftonline.com/
 peoplegraph.firstpartyapps.oaspapps.com/
 policykeyservice.dc.ad.msft.net/
 portal.microsoftonline.com/
 portal.office.com/
-pptcs.officeapps.live.com/
 prod.firstpartyapps.oaspapps.com.akadns.net/
 prod.msocdn.com/
 protection.office.com/
@@ -224,7 +218,6 @@ teams.microsoft.com/
 technet.microsoft.com/
 telemetryservice.firstpartyapps.oaspapps.com/
 testconnectivity.microsoft.com/
-uci.officeapps.live.com/
 videocontent.osi.office.net/
 videoplayercdn.osi.office.net/
 view.atdmt.com/
@@ -232,9 +225,7 @@ vortex.data.microsoft.com/
 watson.microsoft.com/
 watson.telemetry.microsoft.com/
 wikipedia.firstpartyapps.oaspapps.com/
-wordcs.officeapps.live.com/
 workplaceanalytics.cdn.office.net/
-workplaceanalytics.office.com/
 wus-firstpartyapps.oaspapps.com/
 wus-www.sway-cdn.com/
 wus-www.sway-extensions.com/
