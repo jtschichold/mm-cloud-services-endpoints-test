@@ -22,7 +22,6 @@
 *.keydelivery.mediaservices.windows.net/
 *.mail.protection.outlook.com/
 *.manage.microsoft.com/
-*.manage.office.com/
 *.media.azure.net/
 *.microsoft.com/
 *.microsoftonline-p.com/
@@ -132,7 +131,6 @@ forms.microsoft.com/
 go.microsoft.com/
 graph.microsoft.com/
 graph.windows.net/
-home.office.com/
 informationprotection.hosting.portal.azure.net/
 insertmedia.bing.office.net/
 isrg.trustid.ocsp.identrust.com/
@@ -145,7 +143,6 @@ login.windows-ppe.net/
 login.windows.net/
 logincert.microsoftonline.com/
 loginex.microsoftonline.com/
-manage.office.com/
 management.azure.com/
 mem.gfx.ms/
 mscrl.microsoft.com/
@@ -180,7 +177,6 @@ passwordreset.microsoftonline.com/
 peoplegraph.firstpartyapps.oaspapps.com/
 policykeyservice.dc.ad.msft.net/
 portal.microsoftonline.com/
-portal.office.com/
 prod.firstpartyapps.oaspapps.com.akadns.net/
 prod.msocdn.com/
 protection.office.com/
@@ -225,7 +221,6 @@ wus-www.sway-cdn.com/
 wus-www.sway-extensions.com/
 www.digicert.com/
 www.microsoft.com/
-www.office.com/
 www.onedrive.com/
 www.outlook.com/
 www.sway.com/
