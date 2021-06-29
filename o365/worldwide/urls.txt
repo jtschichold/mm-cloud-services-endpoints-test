@@ -203,7 +203,6 @@ partnerservices.getmicrosoftkey.com/
 passwordreset.microsoftonline.com/
 peoplegraph.firstpartyapps.oaspapps.com/
 policykeyservice.dc.ad.msft.net/
-portal.microsoftonline.com/
 privatecdn.sharepointonline.com/
 prod.firstpartyapps.oaspapps.com.akadns.net/
 prod.msocdn.com/
@@ -213,7 +212,6 @@ publiccdn.sharepointonline.com/
 r.office.microsoft.com/
 r1.res.office365.com/
 r3.res.office365.com/
-r3.res.outlook.com/
 r4.res.office365.com/
 roaming.officeapps.live.com/
 s.ytimg.com/

@@ -176,7 +176,6 @@ partnerservices.getmicrosoftkey.com/
 passwordreset.microsoftonline.com/
 peoplegraph.firstpartyapps.oaspapps.com/
 policykeyservice.dc.ad.msft.net/
-portal.microsoftonline.com/
 prod.firstpartyapps.oaspapps.com.akadns.net/
 prod.msocdn.com/
 protection.office.com/
@@ -184,7 +183,6 @@ provisioningapi.microsoftonline.com/
 r.office.microsoft.com/
 r1.res.office365.com/
 r3.res.office365.com/
-r3.res.outlook.com/
 r4.res.office365.com/
 roaming.officeapps.live.com/
 s.ytimg.com/
@@ -197,7 +195,6 @@ shellprod.msocdn.com/
 signup.live.com/
 signup.microsoft.com/
 smtp.office365.com/
-spoprod-a.akamaihd.net/
 staffhub.ms/
 staffhubweb.azureedge.net/
 suite.office.net/
