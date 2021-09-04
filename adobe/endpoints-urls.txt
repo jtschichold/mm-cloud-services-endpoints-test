@@ -91,16 +91,9 @@ match.prod.bidr.io/
 na1e-acc.services.adobe.com/
 na1e.services.adobe.com/
 na1r.services.adobe.com/
-ocsp.globalsign.com/rootr1
-ocsp.verisign.com/
 oobe.adobe.com/
 p.typekit.net/
 pixel.quantserve.com/
-platform-cs-irl1.adobe.io/
-platform-cs-jpn3.adobe.io/
-platform-cs-va6.adobe.io/
-platform-cs-va7.adobe.io/
-platform-cs.adobe.io/
 polka.typekit.com/
 prod.acp.adobeoobe.com/
 prod.adobegenuine.com/
