@@ -3,6 +3,7 @@
 *.adobesc.com/
 *.adobess.com/
 *.amazonaws.com/
+*.aws.adobess.com/
 *.behance.net/
 *.elb.amazonaws.com/
 *.ftcdn.net/
@@ -64,6 +65,7 @@ cc-api-teamprojects-ew1.adobe.io/
 cc-api-teamprojects-ue1.adobe.io/
 cc-api-teamprojects.adobe.io/
 cc-collab.adobe.io/
+ccext.adobecces.com/
 ccmdl.adobe.com/
 ccmdls.adobe.com/
 cdn-ffc.oobesaas.adobe.com/*
@@ -101,7 +103,6 @@ pubcerts.licenses.adobe.com/
 rande.html#s3_region
 resources.licenses.adobe.com/
 s3.amazonaws.com/
-scproxy-prod.adobecc.com/
 scripts.demandbase.com/
 services.prod.ims.adobejanus.com/
 snap.licdn.com/
