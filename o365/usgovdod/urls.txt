@@ -20,6 +20,7 @@
 *.wns.windows.com/
 activation.sls.microsoft.com/
 activity.windows.com/
+adminwebservice.gov.us.microsoftonline.com/
 attachments-dod.office365-net.us/
 autodiscover-s-dod.office365.us/
 autodiscover.*.mail.onmicrosoft.com/
@@ -27,6 +28,7 @@ autodiscover.*.mail.onmicrosoft.us/
 autodiscover.*.onmicrosoft.com/
 autodiscover.*.onmicrosoft.us/
 az741266.vo.msecnd.net/
+becws.gov.us.microsoftonline.com/
 cdn.odc.officeapps.live.com/
 clientconfig.microsoftonline-p.net/
 compliance.apps.mil/
@@ -68,6 +70,7 @@ oneclient.sfx.ms/
 outlook-dod.office365.us/
 pf.pipe.aria.microsoft.com/
 portal.apps.mil/
+provisioningapi.gov.us.microsoftonline.com/
 r.office.microsoft.com/
 reports.apps.mil/
 secure.aadcdn.microsoftonline-p.com/

@@ -16,7 +16,9 @@
 activation.sls.microsoft.com/
 activity.windows.com/
 admin.onedrive.us/
+adminwebservice.gov.us.microsoftonline.com/
 az741266.vo.msecnd.net/
+becws.gov.us.microsoftonline.com/
 cdn.odc.officeapps.live.com/
 clientconfig.microsoftonline-p.net/
 compliance.microsoft.us/
@@ -52,6 +54,7 @@ ols.officeapps.live.com/
 oneclient.sfx.ms/
 portal.office365.us/
 prod.msocdn.us/
+provisioningapi.gov.us.microsoftonline.com/
 r.office.microsoft.com/
 secure.aadcdn.microsoftonline-p.com/
 security.microsoft.us/

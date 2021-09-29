@@ -16,7 +16,9 @@
 *.wns.windows.com/
 activation.sls.microsoft.com/
 activity.windows.com/
+adminwebservice.gov.us.microsoftonline.com/
 az741266.vo.msecnd.net/
+becws.gov.us.microsoftonline.com/
 cdn.odc.officeapps.live.com/
 clientconfig.microsoftonline-p.net/
 compliance.apps.mil/
@@ -52,6 +54,7 @@ ols.officeapps.live.com/
 oneclient.sfx.ms/
 pf.pipe.aria.microsoft.com/
 portal.apps.mil/
+provisioningapi.gov.us.microsoftonline.com/
 r.office.microsoft.com/
 reports.apps.mil/
 secure.aadcdn.microsoftonline-p.com/
