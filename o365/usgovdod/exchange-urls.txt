@@ -13,14 +13,12 @@
 *.security.apps.mil/
 activation.sls.microsoft.com/
 activity.windows.com/
-adminwebservice.gov.us.microsoftonline.com/
 attachments-dod.office365-net.us/
 autodiscover-s-dod.office365.us/
 autodiscover.*.mail.onmicrosoft.com/
 autodiscover.*.mail.onmicrosoft.us/
 autodiscover.*.onmicrosoft.com/
 autodiscover.*.onmicrosoft.us/
-becws.gov.us.microsoftonline.com/
 cdn.odc.officeapps.live.com/
 clientconfig.microsoftonline-p.net/
 compliance.apps.mil/
@@ -53,7 +51,6 @@ officeredir.microsoft.com/
 ols.officeapps.live.com/
 outlook-dod.office365.us/
 portal.apps.mil/
-provisioningapi.gov.us.microsoftonline.com/
 r.office.microsoft.com/
 reports.apps.mil/
 secure.aadcdn.microsoftonline-p.com/

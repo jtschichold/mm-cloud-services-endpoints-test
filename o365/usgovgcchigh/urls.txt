@@ -22,7 +22,6 @@
 activation.sls.microsoft.com/
 activity.windows.com/
 admin.onedrive.us/
-adminwebservice.gov.us.microsoftonline.com/
 attachments.office365-net.us/
 autodiscover-s.office365.us/
 autodiscover.*.mail.onmicrosoft.com/
@@ -30,7 +29,6 @@ autodiscover.*.mail.onmicrosoft.us/
 autodiscover.*.onmicrosoft.com/
 autodiscover.*.onmicrosoft.us/
 az741266.vo.msecnd.net/
-becws.gov.us.microsoftonline.com/
 cdn.odc.officeapps.live.com/
 clientconfig.microsoftonline-p.net/
 compliance.microsoft.us/
@@ -70,7 +68,6 @@ oneclient.sfx.ms/
 outlook.office365.us/
 portal.office365.us/
 prod.msocdn.us/
-provisioningapi.gov.us.microsoftonline.com/
 r.office.microsoft.com/
 scc.office365.us/
 secure.aadcdn.microsoftonline-p.com/

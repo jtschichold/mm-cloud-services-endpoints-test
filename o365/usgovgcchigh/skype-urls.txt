@@ -15,8 +15,6 @@
 *.security.microsoft.us/
 activation.sls.microsoft.com/
 activity.windows.com/
-adminwebservice.gov.us.microsoftonline.com/
-becws.gov.us.microsoftonline.com/
 cdn.odc.officeapps.live.com/
 clientconfig.microsoftonline-p.net/
 compliance.microsoft.us/
@@ -52,7 +50,6 @@ officeredir.microsoft.com/
 ols.officeapps.live.com/
 portal.office365.us/
 prod.msocdn.us/
-provisioningapi.gov.us.microsoftonline.com/
 r.office.microsoft.com/
 secure.aadcdn.microsoftonline-p.com/
 security.microsoft.us/
