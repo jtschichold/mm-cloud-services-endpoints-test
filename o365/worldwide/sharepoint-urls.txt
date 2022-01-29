@@ -16,6 +16,7 @@
 *.events.data.microsoft.com/
 *.flow.microsoft.com/
 *.geotrust.com/
+*.gr.global.aa-rt.sharepoint.com/
 *.helpshift.com/
 *.hip.live.com/
 *.informationprotection.azure.com/
